@@ -19,6 +19,7 @@ fetch("https://kpq7uxowd1.execute-api.us-east-2.amazonaws.com/dev/examen3",
 })
 .then((response) => response.json())
 .then((data) => {
+  // console.log(data)
   for (let index = 0; index < data.length; index++) {
     by_Make = [...by_Make, data[index].make];
     by_Model = [...by_Model, data[index].model];
@@ -34,12 +35,14 @@ fetch("https://kpq7uxowd1.execute-api.us-east-2.amazonaws.com/dev/examen3",
   type_cars[2].forEach(element => {
     count3[element] = (count3[element] || 0) + 1;
   });
-  console.log(Object.entries(count1))
-  console.log(Object.entries(count2))
-  console.log(Object.entries(count3))
-  const by_make = JSON.stringify(count1)
-  const by_model = JSON.stringify(count2)
-  const by_color = JSON.stringify(count3)
+  var set_entrie1 = Object.entries(count1)
+  var set_entrie2 = Object.entries(count2)    
+  console.log(set_entrie1)
+  console.log(set_entrie2)
+  // console.log(Object.entries(count3))
+  // const by_make = JSON.stringify(count1)
+  // const by_model = JSON.stringify(count2)
+  // const by_color = JSON.stringify(count3)
   //tenemos los tipos
   // console.log(by_make)
   // console.log(by_model)
