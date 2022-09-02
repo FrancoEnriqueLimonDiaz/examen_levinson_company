@@ -3,7 +3,6 @@ var fetch = require("node-fetch");
 const app = express();
 let google = [];
 let sound = [];
-var set_entries;
 var text;
 
 fetch("https://kpq7uxowd1.execute-api.us-east-2.amazonaws.com/dev/examen2", 
@@ -15,13 +14,11 @@ fetch("https://kpq7uxowd1.execute-api.us-east-2.amazonaws.com/dev/examen2",
 })
 .then((response) => response.json())
 .then((data) => {
-  set_entries = Object.values(data)
+  var set_entries = Object.values(data)
   set_entries.forEach(element => {
     if (element.email.match("google")){
-      // console.log(element.email)
       google.push(element.email);
     }else if(element.email.match("soundcloud")){
-      // console.log(element.email)
       sound.push(element.email);
     }
   });
