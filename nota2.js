@@ -23,8 +23,6 @@ fetch("https://kpq7uxowd1.execute-api.us-east-2.amazonaws.com/dev/examen2",
     }
   });
   text = `{"male":"${array_male.length}", "female":"${array_female.length}"}`
-  
-
 })
 
 app.listen(3010, () => {
@@ -32,5 +30,5 @@ app.listen(3010, () => {
 });
 
 app.get("/", (req, res) => {
-  res.send(`<h1 id="hello">${text}</h1>`);
+  res.send(`<h1>${text}</h1>`);
 });
