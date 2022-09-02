@@ -1,0 +1,24 @@
+{
+  "name": "examen_levinson_company",
+  "version": "1.0.0",
+  "description": "Examen de admission para Levinson company",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrancoEnriqueLimonDiaz/examen_levinson_company.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrancoEnriqueLimonDiaz/examen_levinson_company/issues"
+  },
+  "homepage": "https://github.com/FrancoEnriqueLimonDiaz/examen_levinson_company#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.19"
+  }
+}
