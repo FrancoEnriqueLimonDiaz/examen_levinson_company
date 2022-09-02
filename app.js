@@ -3,7 +3,7 @@ var fetch = require("node-fetch");
 const app = express();
 let array = [];
 
-fetch("https://kpq7uxowd1.execute-api.us-east-2.amazonaws.com/dev/examen1", 
+fetch("https://kpq7uxowd1.execute-api.us-east-2.amazonaws.com/dev/examen2", 
 {
   headers: ({
     'Authorization': 'G9zn5KTz8y2PMll11TXx', 
